@@ -143,10 +143,10 @@ TextureImporter:
       name: _Idle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 44
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,10 +165,10 @@ TextureImporter:
       name: _Idle_1
       rect:
         serializedVersion: 2
-        x: 121
+        x: 164
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: _Idle_2
       rect:
         serializedVersion: 2
-        x: 242
+        x: 284
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: _Idle_3
       rect:
         serializedVersion: 2
-        x: 363
+        x: 404
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: _Idle_4
       rect:
         serializedVersion: 2
-        x: 484
+        x: 524
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: _Idle_5
       rect:
         serializedVersion: 2
-        x: 605
+        x: 644
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,10 +275,10 @@ TextureImporter:
       name: _Idle_6
       rect:
         serializedVersion: 2
-        x: 726
+        x: 764
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +297,10 @@ TextureImporter:
       name: _Idle_7
       rect:
         serializedVersion: 2
-        x: 847
+        x: 884
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,10 +319,10 @@ TextureImporter:
       name: _Idle_8
       rect:
         serializedVersion: 2
-        x: 968
+        x: 1004
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: _Idle_9
       rect:
         serializedVersion: 2
-        x: 1089
+        x: 1124
         y: 0
-        width: 106
-        height: 80
+        width: 21
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,7 +373,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":106.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":15.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       _Idle_0: 3204480812468917802
       _Idle_1: 3522011133049882637
