@@ -7,11 +7,12 @@ public class PlayerBehaviour : MonoBehaviour
     public Rigidbody2D rb;
     public AudioSource audioSource;
     public AudioClip swordSlash;
+    public SpriteRenderer spriteRenderer; // Add this
     
     // Footstep audio
-    public AudioClip[] footstepSounds; // Array of 3 footstep sounds
+    public AudioClip[] footstepSounds;
     private float footstepTimer = 0f;
-    private float footstepInterval = 0.6f; // Time between footsteps (adjust based on animation speed)
+    private float footstepInterval = 0.6f;
 
     private float speed = 5f;
     private float jumpForce = 8f;
@@ -33,11 +34,19 @@ public class PlayerBehaviour : MonoBehaviour
 
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        anim.SetFloat("Speed", Mathf.Abs(move));
+        // FLIP SPRITE
+        if (move < 0)
+            spriteRenderer.flipX = true;  // Facing left
+        else if (move > 0)
+            spriteRenderer.flipX = false; // Facing right
+
+        // Set animator parameters
+        bool isRunning = (Mathf.Abs(move) > 0.1f);
+        anim.SetBool("isRunning", isRunning);
         anim.SetBool("Grounded", grounded);
 
         // FOOTSTEPS
-        if (Mathf.Abs(move) > 0.1f && grounded)
+        if (isRunning && grounded)
         {
             footstepTimer += Time.deltaTime;
             
@@ -49,7 +58,7 @@ public class PlayerBehaviour : MonoBehaviour
         }
         else
         {
-            footstepTimer = 0f; // Reset timer when not moving
+            footstepTimer = 0f;
         }
 
         // JUMP
