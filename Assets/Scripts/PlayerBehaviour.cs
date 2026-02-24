@@ -7,15 +7,15 @@ public class PlayerBehaviour : MonoBehaviour
     public Rigidbody2D rb;
     public AudioSource audioSource;
     public AudioClip swordSlash;
-    public SpriteRenderer spriteRenderer; // Add this
+    public SpriteRenderer spriteRenderer;
     
     // Footstep audio
     public AudioClip[] footstepSounds;
     private float footstepTimer = 0f;
-    private float footstepInterval = 0.6f;
+    private float footstepInterval = 0.4f;
 
     private float speed = 5f;
-    private float jumpForce = 8f;
+    private float jumpForce = 12f;
 
     bool grounded = true;
 
