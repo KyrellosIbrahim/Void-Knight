@@ -16,7 +16,6 @@ public class PlayerBehaviour : MonoBehaviour
 
     private float speed = 5f;
     private float jumpForce = 12f;
-
     bool grounded = true;
 
     void Update()
