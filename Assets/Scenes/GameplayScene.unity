@@ -344,7 +344,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 140000, y: 92999.99}
+    oldSize: {x: 0.42, y: 0.56}
     newSize: {x: 140000, y: 92999.99}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -378,7 +378,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &54214580
 Animator:
   serializedVersion: 7
@@ -450,7 +450,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: cc225fd9db5cb48b2869d054a10ae805, type: 3}
+  m_Sprite: {fileID: 547910251586419615, guid: cc225fd9db5cb48b2869d054a10ae805, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -490,6 +490,7 @@ MonoBehaviour:
   anim: {fileID: 54214580}
   rb: {fileID: 54214579}
   audioSource: {fileID: 0}
+  roarSound: {fileID: 8300000, guid: 665a0fdb8388f43df90b287766ffebca, type: 3}
   spriteRenderer: {fileID: 54214581}
   footstepSounds: []
   speed: 4
@@ -16074,7 +16075,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &1228428599
 Animator:
   serializedVersion: 7

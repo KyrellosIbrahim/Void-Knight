@@ -5,6 +5,7 @@ public class BossBehaviour : MonoBehaviour
     public Animator anim;
     public Rigidbody2D rb;
     public AudioSource audioSource;
+    public AudioClip roarSound;
     public SpriteRenderer spriteRenderer;
 
     // Footstep audio
@@ -24,7 +25,7 @@ public class BossBehaviour : MonoBehaviour
     public float walkTimeMax = 2.5f;
 
     // --- AI State ---
-    private enum BossState { Idle, Walking }
+    private enum BossState { Idle, Walking, Chasing, Attacking }
     private BossState currentState = BossState.Idle;
 
     private float stateTimer = 0f;       // counts down to next state switch
@@ -53,16 +54,22 @@ public class BossBehaviour : MonoBehaviour
                 if (stateTimer <= 0f)
                     EnterIdle();
                 break;
+            case BossState.Chasing:
+            // Implement chasing thing here
+            break;
+            case BossState.Attacking:
+            // Implement attacking thing here
+            break;
         }
 
         // --- Sprite flip ---
         if (move < 0)
-            spriteRenderer.flipX = true;
-        else if (move > 0)
             spriteRenderer.flipX = false;
+        else if (move > 0)
+            spriteRenderer.flipX = true;
 
         // --- Animator ---
-        bool isMoving = (Mathf.Abs(move) > 0.1f);
+        bool isMoving = Mathf.Abs(move) > 0.1f;
         anim.SetBool("isMoving", isMoving);
 
         // --- Footsteps ---
@@ -105,6 +112,19 @@ public class BossBehaviour : MonoBehaviour
         // Randomly pick left (-1) or right (1)
         move = (Random.value < 0.5f) ? -1f : 1f;
         stateTimer = Random.Range(walkTimeMin, walkTimeMax);
+    }
+    
+    void EnterChasing()
+    {
+        currentState = BossState.Chasing;
+        // Set move direction towards player (not implemented here)
+        // stateTimer could be used to limit how long the boss chases before re-evaluating
+    }
+
+    void EnterAttacking()
+    {
+        currentState = BossState.Attacking;
+        // Implement attacking logic here
     }
 
     // ---------------------------------------------------------------
