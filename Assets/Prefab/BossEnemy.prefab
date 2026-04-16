@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7183489428092492664}
   - component: {fileID: 5913896275818476210}
   - component: {fileID: 176409553636327776}
-  - component: {fileID: 3072375899055299998}
   - component: {fileID: 617242968807310022}
+  - component: {fileID: -3519151035408509691}
   m_Layer: 0
   m_Name: BossEnemy
   m_TagString: Untagged
@@ -144,8 +144,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &3072375899055299998
-BoxCollider2D:
+--- !u!114 &617242968807310022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6288447829956488747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9079ed0f1ad814d1382e0a62735fa44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossBehaviour
+  anim: {fileID: 5913896275818476210}
+  rb: {fileID: 176409553636327776}
+  audioSource: {fileID: 0}
+  roarSound: {fileID: 8300000, guid: 665a0fdb8388f43df90b287766ffebca, type: 3}
+  spriteRenderer: {fileID: 7183489428092492664}
+  footstepSounds: []
+  speed: 4
+  idleTimeMin: 1
+  idleTimeMax: 3
+  walkTimeMin: 1
+  walkTimeMax: 2.5
+--- !u!70 &-3519151035408509691
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -179,37 +202,5 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.56}
-    newSize: {x: 140000, y: 92999.99}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   m_Size: {x: 0.42, y: 0.56}
-  m_EdgeRadius: 0
---- !u!114 &617242968807310022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6288447829956488747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9079ed0f1ad814d1382e0a62735fa44c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BossBehaviour
-  anim: {fileID: 5913896275818476210}
-  rb: {fileID: 176409553636327776}
-  audioSource: {fileID: 0}
-  roarSound: {fileID: 8300000, guid: 665a0fdb8388f43df90b287766ffebca, type: 3}
-  spriteRenderer: {fileID: 7183489428092492664}
-  footstepSounds: []
-  speed: 4
-  idleTimeMin: 1
-  idleTimeMax: 3
-  walkTimeMin: 1
-  walkTimeMax: 2.5
+  m_Direction: 0
