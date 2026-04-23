@@ -37,7 +37,7 @@ public class BossBehaviour : MonoBehaviour
     private float attackCooldownTimer = 0f;
 
     [Header("Health")]
-    public int maxHealth = 10;
+    public int maxHealth = 8;
     private int currentHealth;
 
     // Reference to the player
@@ -219,9 +219,10 @@ public class BossBehaviour : MonoBehaviour
 
     public void PerformAttack()
     {
-        if (attackPoint == null || playerBehaviour == null) return;
+        if (playerBehaviour == null) return;
 
-        float dist = Vector2.Distance(attackPoint.position, player.position);
+        Vector2 origin = attackPoint != null ? (Vector2)attackPoint.position : (Vector2)transform.position;
+        float dist = Vector2.Distance(origin, player.position);
         if (dist <= attackHitRange)
             playerBehaviour.TakeDamage(attackDamage);
     }
@@ -237,6 +238,7 @@ public class BossBehaviour : MonoBehaviour
         currentHealth -= damage;
         Debug.Log($"Boss took {damage} damage. HP: {currentHealth}/{maxHealth}");
 
+        anim.SetTrigger("Hurt");
         // Getting hit snaps the boss into chasing state
         if (currentState != BossState.Attacking)
             EnterChasing();
@@ -252,8 +254,8 @@ public class BossBehaviour : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         anim.SetTrigger("Die");
         // Disable colliders so the player can walk through the corpse
-        foreach (var col in GetComponents<Collider2D>())
-            col.enabled = false;
+        // foreach (var col in GetComponents<Collider2D>())
+        //     col.enabled = false;
         Debug.Log("Boss died.");
         // TODO: trigger victory / loot spawn here
     }

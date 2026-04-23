@@ -74,8 +74,26 @@ public class PlayerBehaviour : MonoBehaviour
             lastMoveDirection = move;
 
         // FLIP SPRITE
-        if (move < 0) spriteRenderer.flipX = true;
-        else if (move > 0) spriteRenderer.flipX = false;
+        if (move < 0)
+        {
+            spriteRenderer.flipX = true;
+            if (attackPoint != null)
+            {
+                Vector3 p = attackPoint.localPosition;
+                p.x = -Mathf.Abs(p.x);
+                attackPoint.localPosition = p;
+            }
+        }
+        else if (move > 0)
+        {
+            spriteRenderer.flipX = false;
+            if (attackPoint != null)
+            {
+                Vector3 p = attackPoint.localPosition;
+                p.x = Mathf.Abs(p.x);
+                attackPoint.localPosition = p;
+            }
+        }
 
         // ANIMATOR
         bool isRunning = Mathf.Abs(move) > 0.1f;
@@ -143,10 +161,15 @@ public class PlayerBehaviour : MonoBehaviour
     /// </summary>
     public void PerformAttack()
     {
-        if (attackPoint == null) return;
+       float facing = spriteRenderer.flipX ? -1f : 1f;
+        Vector2 origin = attackPoint != null
+            ? (Vector2)attackPoint.position
+            : (Vector2)transform.position + Vector2.right * facing * attackRange * 0.75f;
 
-        // Detect all enemies in attack range
-        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        // Use layerMask if assigned, otherwise hit all layers and filter by component
+        Collider2D[] hits = enemyLayers.value != 0
+            ? Physics2D.OverlapCircleAll(origin, attackRange, enemyLayers)
+            : Physics2D.OverlapCircleAll(origin, attackRange);
         foreach (Collider2D hit in hits)
         {
             BossBehaviour boss = hit.GetComponent<BossBehaviour>();
@@ -195,8 +218,11 @@ public class PlayerBehaviour : MonoBehaviour
     // Draw the attack hitbox in the Scene view for easy positioning
     void OnDrawGizmosSelected()
     {
-        if (attackPoint == null) return;
+        float facing = spriteRenderer != null && spriteRenderer.flipX ? -1f : 1f;
+        Vector2 origin = attackPoint != null
+            ? (Vector2)attackPoint.position
+            : (Vector2)transform.position + Vector2.right * facing * attackRange * 0.75f;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Gizmos.DrawWireSphere(origin, attackRange);
     }
 }
