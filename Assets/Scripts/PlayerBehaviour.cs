@@ -122,12 +122,17 @@ public class PlayerBehaviour : MonoBehaviour
         if (k.spaceKey.wasPressedThisFrame && grounded)
         {
             jumpQueued = true;
+            grounded = false;
+            anim.SetBool("Grounded", false);
             anim.SetTrigger("Jump");
+            Debug.Log("Player jumped, jump was triggered.");
         }
 
         // ATTACK
         if (k.jKey.wasPressedThisFrame && attackCooldownTimer <= 0f)
         {
+            anim.SetInteger("AttackIndex", Random.Range(0, 2)); // picks 0 or 1 to play animation
+            anim.ResetTrigger("Attack");
             anim.SetTrigger("Attack");
             audioSource.PlayOneShot(swordSlash);
             attackCooldownTimer = attackCooldown;

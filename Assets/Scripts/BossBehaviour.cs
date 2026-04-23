@@ -238,6 +238,7 @@ public class BossBehaviour : MonoBehaviour
         currentHealth -= damage;
         Debug.Log($"Boss took {damage} damage. HP: {currentHealth}/{maxHealth}");
 
+        anim.ResetTrigger("Hurt");
         anim.SetTrigger("Hurt");
         // Getting hit snaps the boss into chasing state
         if (currentState != BossState.Attacking)
