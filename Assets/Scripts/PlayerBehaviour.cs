@@ -195,6 +195,11 @@ public class PlayerBehaviour : MonoBehaviour
 
         Debug.Log($"Player took {damage} damage. HP: {currentHealth}/{maxHealth}");
 
+        if (currentHealth > 0) {
+            anim.ResetTrigger("Hurt");
+            anim.SetTrigger("Hurt");
+        }
+
         if (currentHealth <= 0)
             Die();
     }
