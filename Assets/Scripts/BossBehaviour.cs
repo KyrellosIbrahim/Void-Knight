@@ -24,17 +24,19 @@ public class BossBehaviour : MonoBehaviour
     public float walkTimeMax = 2.5f;
 
     [Header("Detection")]
-    public float detectionRange  = 8f;   // how far the boss can see the player
-    public float attackRange     = 1.2f; // how close before attacking
-    public float loseAggroRange  = 10f;  // distance before boss gives up chasing
+    public float detectionRange  = 15f;   // how far the boss can see the player
+    public float attackRange     = 3f; // how close before attacking
+    public float loseAggroRange  = 20f;  // distance before boss gives up chasing
 
     [Header("Attack")]
     // Assign a child Transform positioned in front of the boss as the hitbox origin
     public Transform attackPoint;
-    public float attackHitRange  = 1.0f;
+    public float attackHitRange  = 3.5f;
     public int   attackDamage    = 1;
     public float attackCooldown  = 1.5f;
     private float attackCooldownTimer = 0f;
+    private float attackDuration = 0.8f;
+    private bool attackFired = false;
 
     [Header("Health")]
     public int maxHealth = 8;
@@ -70,7 +72,6 @@ public class BossBehaviour : MonoBehaviour
     void Update()
     {
         if (currentState == BossState.Dead) return;
-
         stateTimer            -= Time.deltaTime;
         attackCooldownTimer   -= Time.deltaTime;
 
@@ -128,8 +129,12 @@ public class BossBehaviour : MonoBehaviour
             case BossState.Attacking:
                 move = 0f;
 
-                // The attack animation should call PerformAttack() via an Animation Event.
-                // stateTimer holds the attack animation duration — when it expires, go back to chasing.
+                if (!attackFired && stateTimer <= attackDuration * 0.5f)
+                {
+                    PerformAttack();
+                    attackFired = true;
+                }
+
                 if (stateTimer <= 0f)
                 {
                     if (distToPlayer <= loseAggroRange)
@@ -204,13 +209,11 @@ public class BossBehaviour : MonoBehaviour
         currentState = BossState.Attacking;
         attackCooldownTimer = attackCooldown;
 
-        // Estimate how long the attack animation lasts so we know when to return to chasing.
-        // Adjust this to match your actual animation clip length.
-        stateTimer = 0.8f;
+
+        stateTimer = attackDuration;
+        attackFired = false;
 
         anim.SetTrigger("Attack");
-
-        PerformAttack();
     }
 
     // ---------------------------------------------------------------
@@ -225,6 +228,7 @@ public class BossBehaviour : MonoBehaviour
         float dist = Vector2.Distance(origin, player.position);
         if (dist <= attackHitRange)
             playerBehaviour.TakeDamage(attackDamage);
+            Debug.Log($"Boss attacked player. Player HP: {playerBehaviour.currentHealth}/{playerBehaviour.maxHealth}");
     }
 
     // ---------------------------------------------------------------

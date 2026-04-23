@@ -16405,6 +16405,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   maxHealth: 5
+  currentHealth: 0
   attackPoint: {fileID: 1875926594}
   attackRange: 0.6
   attackDamage: 1
@@ -22223,7 +22224,7 @@ Transform:
   m_GameObject: {fileID: 2004494622}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.39, y: 0, z: 0}
+  m_LocalPosition: {x: -0.006, y: -0.016, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22602,6 +22603,22 @@ PrefabInstance:
       propertyPath: attackPoint
       value: 
       objectReference: {fileID: 2004494623}
+    - target: {fileID: 617242968807310022, guid: ab6260736b2524650a0af3a4bc675b72, type: 3}
+      propertyPath: attackRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 617242968807310022, guid: ab6260736b2524650a0af3a4bc675b72, type: 3}
+      propertyPath: attackHitRange
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 617242968807310022, guid: ab6260736b2524650a0af3a4bc675b72, type: 3}
+      propertyPath: detectionRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 617242968807310022, guid: ab6260736b2524650a0af3a4bc675b72, type: 3}
+      propertyPath: loseAggroRange
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6288447829956488747, guid: ab6260736b2524650a0af3a4bc675b72, type: 3}
       propertyPath: m_Name
       value: BossEnemy

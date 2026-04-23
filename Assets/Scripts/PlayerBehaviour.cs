@@ -24,7 +24,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("Health")]
     public int maxHealth = 5;
-    private int currentHealth;
+    public int currentHealth;
 
     [Header("Attack")]
     // Assign a child Transform positioned in front of the player to act as the hitbox origin
@@ -125,7 +125,6 @@ public class PlayerBehaviour : MonoBehaviour
             grounded = false;
             anim.SetBool("Grounded", false);
             anim.SetTrigger("Jump");
-            Debug.Log("Player jumped, jump was triggered.");
         }
 
         // ATTACK
