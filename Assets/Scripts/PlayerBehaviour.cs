@@ -228,8 +228,14 @@ public class PlayerBehaviour : MonoBehaviour
         anim.SetTrigger("Die");
         audioSource.PlayOneShot(deathSound);
         rb.linearVelocity = Vector2.zero;
-        // TODO: trigger game-over flow here
         Debug.Log("Player died.");
+        Invoke(nameof(ShowGameOverDelayed), 3f); // delay showing game over screen to allow death animation + sound to play
+    }
+
+    void ShowGameOverDelayed()
+    {
+        var menu = FindObjectOfType<GameMenuManager>();
+        if (menu != null) menu.ShowGameOver();
     }
 
     // ---------------------------------------------------------------

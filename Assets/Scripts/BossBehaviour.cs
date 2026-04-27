@@ -265,6 +265,7 @@ public class BossBehaviour : MonoBehaviour
         move = 0f;
         rb.linearVelocity = Vector2.zero;
         anim.SetTrigger("Die");
+        audioSource.PlayOneShot(deathSound);
         // Disable colliders so the player can walk through the corpse
         foreach (var col in GetComponents<Collider2D>()) {
             col.enabled = false;
