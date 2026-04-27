@@ -5,7 +5,8 @@ public class BossBehaviour : MonoBehaviour
     public Animator anim;
     public Rigidbody2D rb;
     public AudioSource audioSource;
-    public AudioClip roarSound;
+    public AudioClip roarSound1;
+    public AudioClip roarSound2;
     public SpriteRenderer spriteRenderer;
 
     // Footstep audio
@@ -202,8 +203,10 @@ public class BossBehaviour : MonoBehaviour
     void EnterChasing()
     {
         currentState = BossState.Chasing;
-        if (roarSound != null && audioSource != null) {
-            audioSource.PlayOneShot(roarSound);
+        if (roarSound1 != null && roarSound2 != null && audioSource != null) {
+            // play one of two roar sounds
+            AudioClip roarToPlay = (Random.value < 0.5f) ? roarSound1 : roarSound2;
+            audioSource.PlayOneShot(roarToPlay);
         }
     }
 
