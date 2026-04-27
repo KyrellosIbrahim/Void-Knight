@@ -97,6 +97,18 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 582b85c36d0fd4431aa006262da0ae29, type: 3}
+    - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: roarSound1
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e6dd85a8b14248f8b0f457cf50c01fd, type: 3}
+    - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: roarSound2
+      value: 
+      objectReference: {fileID: 8300000, guid: 8450a043ed03543a3845164ecc340a79, type: 3}
+    - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1606210953809106416}

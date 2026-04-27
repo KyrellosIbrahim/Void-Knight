@@ -192,9 +192,12 @@ MonoBehaviour:
   anim: {fileID: 5569552116353884511}
   rb: {fileID: 4868320347351320081}
   audioSource: {fileID: 0}
-  roarSound: {fileID: 8300000, guid: 665a0fdb8388f43df90b287766ffebca, type: 3}
+  roarSound1: {fileID: 8300000, guid: 665a0fdb8388f43df90b287766ffebca, type: 3}
+  roarSound2: {fileID: 8300000, guid: c18986fb9bf4a4df0bf40870bd3bea0e, type: 3}
+  deathSound: {fileID: 8300000, guid: 4af2f47e377c54b61b0130e8171f709c, type: 3}
   spriteRenderer: {fileID: 2186507210738155472}
   footstepSounds: []
+  flipXInverted: 0
   speed: 4
   chaseSpeed: 3.5
   idleTimeMin: 1

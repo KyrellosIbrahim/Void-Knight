@@ -61,6 +61,10 @@ PrefabInstance:
       value: demonEnemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7383295869161472478, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: roarSound2
+      value: 
+      objectReference: {fileID: 8300000, guid: 8450a043ed03543a3845164ecc340a79, type: 3}
+    - target: {fileID: 7383295869161472478, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
       propertyPath: attackDamage
       value: 2
       objectReference: {fileID: 0}

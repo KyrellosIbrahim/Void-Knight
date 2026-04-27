@@ -7,6 +7,7 @@ public class BossBehaviour : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip roarSound1;
     public AudioClip roarSound2;
+    public AudioClip deathSound;
     public SpriteRenderer spriteRenderer;
 
     // Footstep audio
