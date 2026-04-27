@@ -60,6 +60,13 @@ public class PlayerBehaviour : MonoBehaviour
     void Update()
     {
         if (isDead) return;
+        // instant death if player falls off the map
+        if (transform.position.y <= -15f)
+        {
+            currentHealth = 0;
+            Die();
+            return;
+        }
 
         Keyboard k = Keyboard.current;
 
