@@ -24,7 +24,11 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("Health")]
     public int maxHealth = 5;
-    public int currentHealth;
+    private int currentHealth;
+    public int CurrentHealth => currentHealth; // public read-only property for HUD access
+
+    [Header("Coins")]
+    public int coinCount = 0;
 
     [Header("Attack")]
     // Assign a child Transform positioned in front of the player to act as the hitbox origin

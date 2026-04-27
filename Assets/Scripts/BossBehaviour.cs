@@ -228,7 +228,7 @@ public class BossBehaviour : MonoBehaviour
         float dist = Vector2.Distance(origin, player.position);
         if (dist <= attackHitRange)
             playerBehaviour.TakeDamage(attackDamage);
-            Debug.Log($"Boss attacked player. Player HP: {playerBehaviour.currentHealth}/{playerBehaviour.maxHealth}");
+            Debug.Log($"Boss attacked player. Player HP: {playerBehaviour.CurrentHealth}/{playerBehaviour.maxHealth}");
     }
 
     // ---------------------------------------------------------------
