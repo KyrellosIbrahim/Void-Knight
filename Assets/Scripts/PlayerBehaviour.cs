@@ -15,6 +15,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float footstepInterval = 0.4f;
 
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float sprintSpeed = 8f;
     [SerializeField] private float jumpForce = 12f;
 
     // Ground detection
@@ -49,6 +50,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float lastMoveDirection = 0f;
     private bool jumpQueued = false;
     private bool isDead = false;
+    private bool isSprinting = false;
 
     void Start()
     {
@@ -69,6 +71,7 @@ public class PlayerBehaviour : MonoBehaviour
         move = 0f;
         if (k.aKey.isPressed || k.leftArrowKey.isPressed)  move = -1f;
         if (k.dKey.isPressed || k.rightArrowKey.isPressed) move =  1f;
+        isSprinting = k.leftShiftKey.isPressed && move != 0f;
 
         // TURNAROUND
         if (move != 0f && lastMoveDirection != 0f && move != lastMoveDirection)
@@ -150,7 +153,8 @@ public class PlayerBehaviour : MonoBehaviour
         if (isDead) return;
 
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
+        float currentSpeed = isSprinting ? sprintSpeed : speed;
+        rb.linearVelocity = new Vector2(move * currentSpeed, rb.linearVelocity.y);
 
         if (jumpQueued)
         {

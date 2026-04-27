@@ -86,9 +86,8 @@ public class HUDManager : MonoBehaviour
         heartImages = new Image[player.maxHealth];
         for (int i = 0; i < player.maxHealth; i++)
         {
-            var go = new GameObject("Heart_" + i);
+            var go = new GameObject("Heart_" + i, typeof(RectTransform), typeof(CanvasRenderer));
             go.transform.SetParent(heartsPanel, false);
-            go.AddComponent<CanvasRenderer>();
 
             var rt       = go.GetComponent<RectTransform>();
             rt.sizeDelta = new Vector2(heartSize, heartSize);
@@ -160,10 +159,12 @@ public class HUDManager : MonoBehaviour
     void RefreshHearts(int hp)
     {
         if (heartImages == null) return;
-        for (int i = 0; i < heartImages.Length; i++)
+        for (int i = 0; i < heartImages.Length; i++) {
+            if (heartImages[i] == null) continue;
             heartImages[i].color = i < hp
                 ? Color.white
                 : new Color(0.15f, 0.15f, 0.15f, 0.35f);
+        }
     }
 
     void RefreshCoins(int coins)

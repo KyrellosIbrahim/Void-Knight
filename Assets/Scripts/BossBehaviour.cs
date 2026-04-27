@@ -13,6 +13,9 @@ public class BossBehaviour : MonoBehaviour
     private float footstepTimer = 0f;
     private float footstepInterval = 0.4f;
 
+    [Header("Sprite")]
+    public bool flipXInverted = false;
+
     [Header("Movement")]
     public float speed = 4f;
     public float chaseSpeed = 5.5f;
@@ -146,8 +149,8 @@ public class BossBehaviour : MonoBehaviour
         }
 
         // --- Sprite flip ---
-        if (move < 0)      spriteRenderer.flipX = false;
-        else if (move > 0) spriteRenderer.flipX = true;
+        if (move < 0)      spriteRenderer.flipX = flipXInverted;
+        else if (move > 0) spriteRenderer.flipX = !flipXInverted;
 
         // --- Animator ---
         bool isMoving = Mathf.Abs(move) > 0.1f;
@@ -199,9 +202,9 @@ public class BossBehaviour : MonoBehaviour
     void EnterChasing()
     {
         currentState = BossState.Chasing;
-        // Play roar the first time aggro is gained (optional)
-        if (roarSound != null && audioSource != null)
+        if (roarSound != null && audioSource != null) {
             audioSource.PlayOneShot(roarSound);
+        }
     }
 
     void EnterAttacking()
@@ -259,19 +262,21 @@ public class BossBehaviour : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         anim.SetTrigger("Die");
         // Disable colliders so the player can walk through the corpse
-        // foreach (var col in GetComponents<Collider2D>())
-        //     col.enabled = false;
+        foreach (var col in GetComponents<Collider2D>()) {
+            col.enabled = false;
+        }
+        // Disable gravity so boss doesn't fall through floor when death animation plays
+        rb.gravityScale = 0f;
+            
         Debug.Log("Boss died.");
         // TODO: trigger victory / loot spawn here
     }
 
-    // ---------------------------------------------------------------
-    //  Helpers
-    // ---------------------------------------------------------------
 
     void PlayRandomFootstep()
     {
         if (footstepSounds.Length == 0) return;
+        // periodically play footsteps. Only if boss is moving.
         int idx = Random.Range(0, footstepSounds.Length);
         audioSource.PlayOneShot(footstepSounds[idx]);
     }
