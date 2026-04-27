@@ -7,6 +7,8 @@ public class PlayerBehaviour : MonoBehaviour
     public Rigidbody2D rb;
     public AudioSource audioSource;
     public AudioClip swordSlash;
+    public AudioClip hurtSound;
+    public AudioClip deathSound;
     public SpriteRenderer spriteRenderer;
 
     // Footstep audio
@@ -213,6 +215,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (currentHealth > 0) {
             anim.ResetTrigger("Hurt");
             anim.SetTrigger("Hurt");
+            audioSource.PlayOneShot(hurtSound);
         }
 
         if (currentHealth <= 0)
@@ -223,6 +226,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         isDead = true;
         anim.SetTrigger("Die");
+        audioSource.PlayOneShot(deathSound);
         rb.linearVelocity = Vector2.zero;
         // TODO: trigger game-over flow here
         Debug.Log("Player died.");
