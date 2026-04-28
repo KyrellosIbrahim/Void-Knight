@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 8a39ff8c96cfa42f99d14d4ca9bb5fd0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6673075325721098349
+    second: Cartoon Style Sprite Sheet 196_0
+  - first:
+      213: -8170145124509706352
+    second: Cartoon Style Sprite Sheet 196_1
+  - first:
+      213: 6909525501616283772
+    second: Cartoon Style Sprite Sheet 196_2
+  - first:
+      213: -8005564513933095674
+    second: Cartoon Style Sprite Sheet 196_3
+  - first:
+      213: -941913567631552909
+    second: Cartoon Style Sprite Sheet 196_4
+  - first:
+      213: 1903026543300306506
+    second: Cartoon Style Sprite Sheet 196_5
+  - first:
+      213: -990904489858377944
+    second: Cartoon Style Sprite Sheet 196_6
+  - first:
+      213: -3417178149534342572
+    second: Cartoon Style Sprite Sheet 196_7
+  - first:
+      213: -6414508254335295070
+    second: Cartoon Style Sprite Sheet 196_8
+  - first:
+      213: 6037311893736284034
+    second: Cartoon Style Sprite Sheet 196_9
+  - first:
+      213: 3664040668426615845
+    second: Cartoon Style Sprite Sheet 196_10
+  - first:
+      213: -5315381556116782515
+    second: Cartoon Style Sprite Sheet 196_11
+  - first:
+      213: 3762438120302625791
+    second: Cartoon Style Sprite Sheet 196_12
+  - first:
+      213: 5301488665183985296
+    second: Cartoon Style Sprite Sheet 196_13
+  - first:
+      213: -4441251027213320693
+    second: Cartoon Style Sprite Sheet 196_14
+  - first:
+      213: -1760329185314467192
+    second: Cartoon Style Sprite Sheet 196_15
+  - first:
+      213: 6443902085078033895
+    second: Cartoon Style Sprite Sheet 196_16
+  - first:
+      213: 3793082072894124047
+    second: Cartoon Style Sprite Sheet 196_17
+  - first:
+      213: 4926946674995917315
+    second: Cartoon Style Sprite Sheet 196_18
+  - first:
+      213: -2451038049818138401
+    second: Cartoon Style Sprite Sheet 196_19
+  - first:
+      213: 7513852324026276716
+    second: Cartoon Style Sprite Sheet 196_20
+  - first:
+      213: 6938178245312974740
+    second: Cartoon Style Sprite Sheet 196_21
+  - first:
+      213: 8149226988106898650
+    second: Cartoon Style Sprite Sheet 196_22
+  - first:
+      213: 4711739042257177454
+    second: Cartoon Style Sprite Sheet 196_23
+  - first:
+      213: 6601564314940446411
+    second: Cartoon Style Sprite Sheet 196_24
+  - first:
+      213: 5441220446261803214
+    second: Cartoon Style Sprite Sheet 196_25
+  - first:
+      213: -2425384040288643020
+    second: Cartoon Style Sprite Sheet 196_26
+  - first:
+      213: 823146562719448179
+    second: Cartoon Style Sprite Sheet 196_27
+  - first:
+      213: -6681666689150234970
+    second: Cartoon Style Sprite Sheet 196_28
+  - first:
+      213: 227482104129154080
+    second: Cartoon Style Sprite Sheet 196_29
+  - first:
+      213: 8666601165822976025
+    second: Cartoon Style Sprite Sheet 196_30
+  - first:
+      213: -1824699658397161690
+    second: Cartoon Style Sprite Sheet 196_31
+  - first:
+      213: -8180458557057964999
+    second: Cartoon Style Sprite Sheet 196_32
+  - first:
+      213: -4064150028022631535
+    second: Cartoon Style Sprite Sheet 196_33
+  - first:
+      213: -604996162057828249
+    second: Cartoon Style Sprite Sheet 196_34
+  - first:
+      213: 8578425837550787459
+    second: Cartoon Style Sprite Sheet 196_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 198
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39748f2c8597463a0800000000000000
+      internalID: -6673075325721098349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 990
+        width: 153
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097953aeb40dd9e80800000000000000
+      internalID: -8170145124509706352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_2
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 990
+        width: 184
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c706752e5d093ef50800000000000000
+      internalID: 6909525501616283772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_3
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 997
+        width: 198
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d8b886d7586e090800000000000000
+      internalID: -8005564513933095674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_4
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 990
+        width: 163
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e4338c996ade2f0800000000000000
+      internalID: -941913567631552909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_5
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 997
+        width: 198
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46ed87fe88e86a10800000000000000
+      internalID: 1903026543300306506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 793
+        width: 198
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827d6a3dd999f32f0800000000000000
+      internalID: -990904489858377944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 801
+        width: 198
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45267c6f39eb390d0800000000000000
+      internalID: -3417178149534342572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 801
+        width: 198
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1a88b6ab61bf6a0800000000000000
+      internalID: -6414508254335295070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 801
+        width: 198
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f54682e27d8c350800000000000000
+      internalID: 6037311893736284034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_10
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 792
+        width: 168
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c3724339949d230800000000000000
+      internalID: 3664040668426615845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_11
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 792
+        width: 182
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d420ff503a8fb36b0800000000000000
+      internalID: -5315381556116782515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 613
+        width: 198
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3c602498dd63430800000000000000
+      internalID: 3762438120302625791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 609
+        width: 198
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e1d0d3adba29940800000000000000
+      internalID: 5301488665183985296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_14
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 607
+        width: 198
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e7c94b8b18d52c0800000000000000
+      internalID: -4441251027213320693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_15
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 598
+        width: 198
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882149dbeed0297e0800000000000000
+      internalID: -1760329185314467192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_16
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 594
+        width: 197
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5a97c1ec65d6950800000000000000
+      internalID: 6443902085078033895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_17
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 594
+        width: 187
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00b1c67c0cb3a430800000000000000
+      internalID: 3793082072894124047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 396
+        width: 186
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3027c6695e7006440800000000000000
+      internalID: 4926946674995917315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_19
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 421
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8af9d31e92cfdd0800000000000000
+      internalID: -2451038049818138401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_20
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 411
+        width: 198
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b545ce0e0964860800000000000000
+      internalID: 7513852324026276716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_21
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 420
+        width: 198
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f0934aa5c594060800000000000000
+      internalID: 6938178245312974740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_22
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 424
+        width: 198
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc532ce4ced71170800000000000000
+      internalID: 8149226988106898650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_23
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 423
+        width: 197
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b0410f1b5736140800000000000000
+      internalID: 4711739042257177454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 198
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc69be194c77d9b50800000000000000
+      internalID: 6601564314940446411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_25
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 198
+        width: 118
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8f604ca29138b40800000000000000
+      internalID: 5441220446261803214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_26
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 198
+        width: 197
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43891bac01e475ed0800000000000000
+      internalID: -2425384040288643020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_27
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 198
+        width: 198
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cf9f400776c6b00800000000000000
+      internalID: 823146562719448179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_28
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 226
+        width: 198
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aec3a51c83f543a0800000000000000
+      internalID: -6681666689150234970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_29
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 239
+        width: 198
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c6069b4cd282300800000000000000
+      internalID: 227482104129154080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 198
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9106ddab7d3f54870800000000000000
+      internalID: 8666601165822976025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_31
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 196
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627e57f045d5da6e0800000000000000
+      internalID: -1824699658397161690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_32
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 21
+        width: 198
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93461c6c84c297e80800000000000000
+      internalID: -8180458557057964999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_33
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 28
+        width: 198
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19331d1151d3997c0800000000000000
+      internalID: -4064150028022631535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_34
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1
+        width: 198
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768811e223f9a97f0800000000000000
+      internalID: -604996162057828249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cartoon Style Sprite Sheet 196_35
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 2
+        width: 198
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b5f3b49d0bc0770800000000000000
+      internalID: 8578425837550787459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cartoon Style Sprite Sheet 196_0: -6673075325721098349
+      Cartoon Style Sprite Sheet 196_1: -8170145124509706352
+      Cartoon Style Sprite Sheet 196_10: 3664040668426615845
+      Cartoon Style Sprite Sheet 196_11: -5315381556116782515
+      Cartoon Style Sprite Sheet 196_12: 3762438120302625791
+      Cartoon Style Sprite Sheet 196_13: 5301488665183985296
+      Cartoon Style Sprite Sheet 196_14: -4441251027213320693
+      Cartoon Style Sprite Sheet 196_15: -1760329185314467192
+      Cartoon Style Sprite Sheet 196_16: 6443902085078033895
+      Cartoon Style Sprite Sheet 196_17: 3793082072894124047
+      Cartoon Style Sprite Sheet 196_18: 4926946674995917315
+      Cartoon Style Sprite Sheet 196_19: -2451038049818138401
+      Cartoon Style Sprite Sheet 196_2: 6909525501616283772
+      Cartoon Style Sprite Sheet 196_20: 7513852324026276716
+      Cartoon Style Sprite Sheet 196_21: 6938178245312974740
+      Cartoon Style Sprite Sheet 196_22: 8149226988106898650
+      Cartoon Style Sprite Sheet 196_23: 4711739042257177454
+      Cartoon Style Sprite Sheet 196_24: 6601564314940446411
+      Cartoon Style Sprite Sheet 196_25: 5441220446261803214
+      Cartoon Style Sprite Sheet 196_26: -2425384040288643020
+      Cartoon Style Sprite Sheet 196_27: 823146562719448179
+      Cartoon Style Sprite Sheet 196_28: -6681666689150234970
+      Cartoon Style Sprite Sheet 196_29: 227482104129154080
+      Cartoon Style Sprite Sheet 196_3: -8005564513933095674
+      Cartoon Style Sprite Sheet 196_30: 8666601165822976025
+      Cartoon Style Sprite Sheet 196_31: -1824699658397161690
+      Cartoon Style Sprite Sheet 196_32: -8180458557057964999
+      Cartoon Style Sprite Sheet 196_33: -4064150028022631535
+      Cartoon Style Sprite Sheet 196_34: -604996162057828249
+      Cartoon Style Sprite Sheet 196_35: 8578425837550787459
+      Cartoon Style Sprite Sheet 196_4: -941913567631552909
+      Cartoon Style Sprite Sheet 196_5: 1903026543300306506
+      Cartoon Style Sprite Sheet 196_6: -990904489858377944
+      Cartoon Style Sprite Sheet 196_7: -3417178149534342572
+      Cartoon Style Sprite Sheet 196_8: -6414508254335295070
+      Cartoon Style Sprite Sheet 196_9: 6037311893736284034
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
