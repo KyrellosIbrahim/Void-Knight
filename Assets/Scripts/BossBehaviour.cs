@@ -33,6 +33,13 @@ public class BossBehaviour : MonoBehaviour
     public float attackRange     = 3f; // how close before attacking
     public float loseAggroRange  = 20f;  // distance before boss gives up chasing
 
+    [Header("Edge Detection")]
+    public bool stayOnPlatform = true;
+    public Transform leftEdgeCheck;
+    public Transform rightEdgeCheck;
+    public float edgeCheckRadius = 0.15f;
+    public LayerMask groundLayer;
+
     [Header("Attack")]
     // Assign a child Transform positioned in front of the boss as the hitbox origin
     public Transform attackPoint;
@@ -156,6 +163,23 @@ public class BossBehaviour : MonoBehaviour
                         EnterIdle();
                 }
                 break;
+        }
+
+        // --- Edge detection: prevent walking off platforms ---
+        if (stayOnPlatform && groundLayer.value != 0)
+        {
+            if (move < 0 && leftEdgeCheck != null &&
+                !Physics2D.OverlapCircle(leftEdgeCheck.position, edgeCheckRadius, groundLayer))
+            {
+                if (currentState == BossState.Walking) move = 1f; // turn around
+                else move = 0f;                                    // chasing: stop at edge
+            }
+            else if (move > 0 && rightEdgeCheck != null &&
+                !Physics2D.OverlapCircle(rightEdgeCheck.position, edgeCheckRadius, groundLayer))
+            {
+                if (currentState == BossState.Walking) move = -1f;
+                else move = 0f;
+            }
         }
 
         // --- Sprite flip ---

@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.023082806
       objectReference: {fileID: 0}
+    - target: {fileID: 4841008886497729128, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.16
+      objectReference: {fileID: 0}
     - target: {fileID: 5569552116353884511, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
       propertyPath: m_Controller
       value: 
@@ -139,6 +143,14 @@ PrefabInstance:
     - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
       propertyPath: heartDropChance
       value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8714850467393476833, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.156
+      objectReference: {fileID: 0}
+    - target: {fileID: 8714850467393476833, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.251
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: c9c4cb65b004f493783755a52702320a, type: 2}
+    - target: {fileID: 5483640595550784734, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.197
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483640595550784734, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.371
+      objectReference: {fileID: 0}
     - target: {fileID: 6298801950747782716, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
       propertyPath: m_Name
       value: demonEnemy Variant
@@ -91,6 +99,14 @@ PrefabInstance:
     - target: {fileID: 7383295869161472478, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
       propertyPath: loseAggroRange
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630629356598791767, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630629356598791767, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.387
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
