@@ -47,6 +47,14 @@ public class BossBehaviour : MonoBehaviour
     public int maxHealth = 8;
     private int currentHealth;
 
+    [Header("Drops")]
+    public GameObject coinPrefab;
+    public GameObject heartPrefab;
+    public int minCoinDrops = 2;
+    public int maxCoinDrops = 5;
+    [Range(0f, 1f)] public float heartDropChance = 0.3f;
+    public float dropScatter = 1.5f;
+
     // Reference to the player
     private Transform player;
     private PlayerBehaviour playerBehaviour;
@@ -274,7 +282,26 @@ public class BossBehaviour : MonoBehaviour
         rb.gravityScale = 0f;
             
         Debug.Log("Boss died.");
-        // TODO: trigger victory / loot spawn here
+        SpawnDrops();
+    }
+
+    void SpawnDrops()
+    {
+        if (coinPrefab != null)
+        {
+            int count = Random.Range(minCoinDrops, maxCoinDrops + 1);
+            for (int i = 0; i < count; i++)
+            {
+                Vector2 offset = new Vector2(Random.Range(-dropScatter, dropScatter), Random.Range(0f, dropScatter));
+                Instantiate(coinPrefab, (Vector2)transform.position + offset, Quaternion.identity);
+            }
+        }
+
+        if (heartPrefab != null && Random.value < heartDropChance)
+        {
+            Vector2 offset = new Vector2(Random.Range(-dropScatter, dropScatter), Random.Range(0f, dropScatter));
+            Instantiate(heartPrefab, (Vector2)transform.position + offset, Quaternion.identity);
+        }
     }
 
 

@@ -16961,6 +16961,8 @@ MonoBehaviour:
     m_Bits: 8
   maxHealth: 5
   coinCount: 0
+  coinsPerMaxHealth: 5
+  coinsPerDamageBoost: 15
   attackPoint: {fileID: 1875926594}
   attackRange: 0.6
   attackDamage: 1

@@ -69,6 +69,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7383295869161472478, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: maxCoinDrops
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383295869161472478, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: minCoinDrops
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383295869161472478, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
       propertyPath: attackCooldown
       value: 3.66
       objectReference: {fileID: 0}

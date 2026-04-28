@@ -97,6 +97,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 6090190768596221660, guid: 5a4829448f2d243fe9e2c2721cef6480, type: 3}
+    - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
       propertyPath: deathSound
       value: 
       objectReference: {fileID: 8300000, guid: 582b85c36d0fd4431aa006262da0ae29, type: 3}
@@ -113,6 +117,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1606210953809106416}
     - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: maxCoinDrops
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: minCoinDrops
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
       propertyPath: flipXInverted
       value: 1
       objectReference: {fileID: 0}
@@ -123,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
       propertyPath: attackHitRange
       value: 2.275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584560427178727272, guid: 72ec3684e3b714cb286a5cfdc0cb77a0, type: 3}
+      propertyPath: heartDropChance
+      value: 0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

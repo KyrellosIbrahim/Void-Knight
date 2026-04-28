@@ -32,6 +32,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("Coins")]
     public int coinCount = 0;
+    public int coinsPerMaxHealth = 5; // the multiple in which the player gains an extra heart
+    public int coinsPerDamageBoost = 15; // the multiple in which the player gains an extra point of attack damage
 
     [Header("Attack")]
     // Assign a child Transform positioned in front of the player to act as the hitbox origin
@@ -202,6 +204,30 @@ public class PlayerBehaviour : MonoBehaviour
     // ---------------------------------------------------------------
     //  Health / Damage
     // ---------------------------------------------------------------
+
+    public void AddCoin()
+    {
+        coinCount++;
+
+        if (coinCount % coinsPerMaxHealth == 0)
+        {
+            maxHealth++;
+            currentHealth++;
+            Debug.Log($"Max health up! Now {maxHealth}.");
+        }
+
+        if (coinCount % coinsPerDamageBoost == 0)
+        {
+            attackDamage++;
+            Debug.Log($"Damage up! Now {attackDamage}.");
+        }
+    }
+
+    public void Heal(int amount)
+    {
+        if (isDead) return;
+        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+    }
 
     public void TakeDamage(int damage)
     {

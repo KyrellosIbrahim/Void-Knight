@@ -212,6 +212,12 @@ MonoBehaviour:
   attackDamage: 1
   attackCooldown: 1.5
   maxHealth: 10
+  coinPrefab: {fileID: 6090190768596221660, guid: 5a4829448f2d243fe9e2c2721cef6480, type: 3}
+  heartPrefab: {fileID: 3170898775793596926, guid: 571f9a35ca30743789197468c2d6977a, type: 3}
+  minCoinDrops: 3
+  maxCoinDrops: 7
+  heartDropChance: 0.9
+  dropScatter: 1.5
 --- !u!70 &3005204762357540070
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
