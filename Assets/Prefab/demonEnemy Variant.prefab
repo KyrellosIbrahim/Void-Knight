@@ -108,6 +108,14 @@ PrefabInstance:
       propertyPath: loseAggroRange
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 7383295869161472478, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: victoryChestOffset.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383295869161472478, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
+      propertyPath: victoryChestOffset.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8630629356598791767, guid: 13586966c4168457ba254ae4e201f5c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2

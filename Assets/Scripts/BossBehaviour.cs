@@ -61,6 +61,8 @@ public class BossBehaviour : MonoBehaviour
     public int maxCoinDrops = 5;
     [Range(0f, 1f)] public float heartDropChance = 0.3f;
     public float dropScatter = 1.5f;
+    [Tooltip("Only assign on the final boss. Place this chest in the scene (disabled), and it will be activated when this enemy dies.")]
+    public GameObject victoryChest;
 
     // Reference to the player
     private Transform player;
@@ -325,6 +327,11 @@ public class BossBehaviour : MonoBehaviour
         {
             Vector2 offset = new Vector2(Random.Range(-dropScatter, dropScatter), Random.Range(0f, dropScatter));
             Instantiate(heartPrefab, (Vector2)transform.position + offset, Quaternion.identity);
+        }
+
+        if (victoryChest != null)
+        {
+            victoryChest.SetActive(true);
         }
     }
 

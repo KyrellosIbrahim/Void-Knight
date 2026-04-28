@@ -258,6 +258,8 @@ MonoBehaviour:
   maxCoinDrops: 7
   heartDropChance: 0.9
   dropScatter: 1.5
+  victoryChestPrefab: {fileID: 0}
+  victoryChestOffset: {x: 0, y: -0.5}
 --- !u!70 &3005204762357540070
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

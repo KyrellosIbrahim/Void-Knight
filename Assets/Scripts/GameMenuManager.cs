@@ -7,6 +7,7 @@ public class GameMenuManager : MonoBehaviour
     [Header("Panels")]
     public GameObject pauseMenuPanel;
     public GameObject gameOverPanel;
+    public GameObject victoryPanel;
 
     [Header("Scene Names")]
     public string mainMenuSceneName = "MainMenuScene";
@@ -18,6 +19,7 @@ public class GameMenuManager : MonoBehaviour
     {
         if (pauseMenuPanel != null) pauseMenuPanel.SetActive(false);
         if (gameOverPanel  != null) gameOverPanel.SetActive(false);
+        if (victoryPanel   != null) victoryPanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
@@ -52,6 +54,13 @@ public class GameMenuManager : MonoBehaviour
     {
         isGameOver = true;
         if (gameOverPanel != null) gameOverPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void ShowVictory()
+    {
+        isGameOver = true; // disables Esc-pause input so it can't conflict
+        if (victoryPanel != null) victoryPanel.SetActive(true);
         Time.timeScale = 0f;
     }
 

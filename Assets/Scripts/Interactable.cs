@@ -21,6 +21,10 @@ public class Interactable : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip openSound;
 
+    [Header("Victory (boss chest only)")]
+    public bool triggersVictory = false;
+    public float victoryDelay = 2f;
+
     private bool playerInRange = false;
     private bool opened = false;
 
@@ -69,6 +73,15 @@ public class Interactable : MonoBehaviour
             audioSource.PlayOneShot(openSound);
 
         SpawnLoot();
+
+        if (triggersVictory)
+            Invoke(nameof(ShowVictoryDelayed), victoryDelay);
+    }
+
+    void ShowVictoryDelayed()
+    {
+        var menu = FindObjectOfType<GameMenuManager>();
+        if (menu != null) menu.ShowVictory();
     }
 
     void SpawnLoot()
