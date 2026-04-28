@@ -65,7 +65,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (isDead) return;
         // instant death if player falls off the map
-        if (transform.position.y <= -15f)
+        if (transform.position.y <= -30f)
         {
             currentHealth = 0;
             Die();
