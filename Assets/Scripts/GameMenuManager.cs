@@ -10,7 +10,7 @@ public class GameMenuManager : MonoBehaviour
     public GameObject victoryPanel;
 
     [Header("Scene Names")]
-    public string mainMenuSceneName = "MainMenuScene";
+    public string mainMenuSceneName = "MainMenu";
 
     private bool isPaused = false;
     private bool isGameOver = false;

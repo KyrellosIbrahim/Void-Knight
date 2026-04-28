@@ -19640,7 +19640,7 @@ MonoBehaviour:
   pauseMenuPanel: {fileID: 1339053943}
   gameOverPanel: {fileID: 80160686}
   victoryPanel: {fileID: 1460232624}
-  mainMenuSceneName: MainMenuScene
+  mainMenuSceneName: MainMenu
 --- !u!4 &1419426027
 Transform:
   m_ObjectHideFlags: 0
@@ -26622,7 +26622,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1419426026}
         m_TargetAssemblyTypeName: GameMenuManager, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
