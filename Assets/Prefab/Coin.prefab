@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
   type: 0
   pickupSound: {fileID: 8300000, guid: 1595a62dc3e3a4a95bb69d0d15944fbd, type: 3}
+  pickupVolume: 4
 --- !u!50 &7011601373635801822
 Rigidbody2D:
   serializedVersion: 5

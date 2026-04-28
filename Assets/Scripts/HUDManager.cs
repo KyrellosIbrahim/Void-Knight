@@ -15,6 +15,7 @@ public class HUDManager : MonoBehaviour
 
     private int lastHealth = -1;
     private int lastCoins  = -1;
+    private int lastMaxHealth = -1;
 
     void Start()
     {
@@ -39,6 +40,14 @@ public class HUDManager : MonoBehaviour
 
         int hp    = player.CurrentHealth;
         int coins = player.coinCount;
+        int max   = player.maxHealth;
+
+        if (max != lastMaxHealth)
+        {
+            BuildHearts();
+            lastMaxHealth = max;
+            lastHealth = -1; // force refresh below
+        }
 
         if (hp != lastHealth)
         {

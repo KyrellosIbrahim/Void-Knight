@@ -130,7 +130,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.75
 --- !u!114 &3226343892060648598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
   type: 1
   pickupSound: {fileID: 8300000, guid: 9e30f23cbb9174b46824e617fd0ad2e7, type: 3}
+  pickupVolume: 4
 --- !u!50 &-3115643376396850947
 Rigidbody2D:
   serializedVersion: 5
@@ -207,4 +208,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.75
+  m_Radius: 0.5

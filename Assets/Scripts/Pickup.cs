@@ -6,6 +6,7 @@ public class Pickup : MonoBehaviour
 
     public PickupType type = PickupType.Coin;
     public AudioClip pickupSound;
+    [Range(0f, 4f)] public float pickupVolume = 1f;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,7 +23,7 @@ public class Pickup : MonoBehaviour
         }
 
         if (pickupSound != null)
-            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position, pickupVolume);
 
         Destroy(gameObject);
     }
