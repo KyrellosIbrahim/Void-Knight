@@ -30,10 +30,12 @@ public class Interactable : MonoBehaviour
 
     void Start()
     {
-        if (chestRenderer != null && closedSprite != null)
+        if (chestRenderer != null && closedSprite != null) {
             chestRenderer.sprite = closedSprite;
-        if (pressEPrompt != null)
+        }
+        if (pressEPrompt != null) {
             pressEPrompt.SetActive(false);
+        }
     }
 
     void Update()
@@ -59,23 +61,29 @@ public class Interactable : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
         playerInRange = false;
-        if (pressEPrompt != null) pressEPrompt.SetActive(false);
+        if (pressEPrompt != null) {
+            pressEPrompt.SetActive(false);
+        }
     }
 
     void Open()
     {
         opened = true;
-        if (chestRenderer != null && openSprite != null)
+        if (chestRenderer != null && openSprite != null) {
             chestRenderer.sprite = openSprite;
-        if (pressEPrompt != null)
+        }
+        if (pressEPrompt != null) {
             pressEPrompt.SetActive(false);
-        if (audioSource != null && openSound != null)
+        }
+        if (audioSource != null && openSound != null) {
             audioSource.PlayOneShot(openSound);
+        }
 
         SpawnLoot();
 
-        if (triggersVictory)
+        if (triggersVictory) {
             Invoke(nameof(ShowVictoryDelayed), victoryDelay);
+        }
     }
 
     void ShowVictoryDelayed()
@@ -92,8 +100,9 @@ public class Interactable : MonoBehaviour
             Vector2 offset = new Vector2(Random.Range(-dropScatter, dropScatter), Random.Range(0.2f, dropScatter));
             var coin = Instantiate(coinPrefab, (Vector2)transform.position + offset, Quaternion.identity);
             var rb = coin.GetComponent<Rigidbody2D>();
-            if (rb != null)
+            if (rb != null) {
                 rb.linearVelocity = new Vector2(Random.Range(-2f, 2f), dropUpwardForce);
+            }
         }
 
         if (heartPrefab != null && Random.value < heartDropChance)
@@ -101,8 +110,9 @@ public class Interactable : MonoBehaviour
             Vector2 offset = new Vector2(Random.Range(-dropScatter, dropScatter), 0.3f);
             var heart = Instantiate(heartPrefab, (Vector2)transform.position + offset, Quaternion.identity);
             var rb = heart.GetComponent<Rigidbody2D>();
-            if (rb != null)
+            if (rb != null) {
                 rb.linearVelocity = new Vector2(Random.Range(-1.5f, 1.5f), dropUpwardForce);
+            }
         }
     }
 }

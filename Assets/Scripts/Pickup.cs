@@ -22,8 +22,9 @@ public class Pickup : MonoBehaviour
             player.Heal(1);
         }
 
-        if (pickupSound != null)
+        if (pickupSound != null) {
             AudioSource.PlayClipAtPoint(pickupSound, transform.position, pickupVolume);
+        }
 
         Destroy(gameObject);
     }

@@ -61,7 +61,6 @@ public class BossBehaviour : MonoBehaviour
     public int maxCoinDrops = 5;
     [Range(0f, 1f)] public float heartDropChance = 0.3f;
     public float dropScatter = 1.5f;
-    [Tooltip("Only assign on the final boss. Place this chest in the scene (disabled), and it will be activated when this enemy dies.")]
     public GameObject victoryChest;
 
     // Reference to the player
@@ -80,7 +79,7 @@ public class BossBehaviour : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        // Auto-find the player by tag
+        // Auto-find player by tag
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
@@ -106,7 +105,7 @@ public class BossBehaviour : MonoBehaviour
             case BossState.Idle:
                 move = 0f;
 
-                // Spot the player → start chasing
+                // Spot the player -> start chasing
                 if (distToPlayer <= detectionRange)
                 {
                     EnterChasing();
@@ -118,7 +117,7 @@ public class BossBehaviour : MonoBehaviour
                 break;
 
             case BossState.Walking:
-                // Spot the player → start chasing
+                // Spot the player -> start chasing
                 if (distToPlayer <= detectionRange)
                 {
                     EnterChasing();
@@ -167,14 +166,18 @@ public class BossBehaviour : MonoBehaviour
                 break;
         }
 
-        // --- Edge detection: prevent walking off platforms ---
+        // Edge detection - prevent walking off platforms
         if (stayOnPlatform && groundLayer.value != 0)
         {
             if (move < 0 && leftEdgeCheck != null &&
                 !Physics2D.OverlapCircle(leftEdgeCheck.position, edgeCheckRadius, groundLayer))
             {
-                if (currentState == BossState.Walking) move = 1f; // turn around
-                else move = 0f;                                    // chasing: stop at edge
+                if (currentState == BossState.Walking) {
+                    move = 1f; // turn around
+                }
+                else {
+                    move = 0f; // chasing: stop at edge
+                }
             }
             else if (move > 0 && rightEdgeCheck != null &&
                 !Physics2D.OverlapCircle(rightEdgeCheck.position, edgeCheckRadius, groundLayer))
@@ -184,16 +187,20 @@ public class BossBehaviour : MonoBehaviour
             }
         }
 
-        // --- Sprite flip ---
-        if (move < 0)      spriteRenderer.flipX = flipXInverted;
-        else if (move > 0) spriteRenderer.flipX = !flipXInverted;
+        // Sprite flip
+        if (move < 0) {
+            spriteRenderer.flipX = flipXInverted;
+        }
+        else if (move > 0) {
+            spriteRenderer.flipX = !flipXInverted;
+        }
 
-        // --- Animator ---
+        // Animator
         bool isMoving = Mathf.Abs(move) > 0.1f;
         anim.SetBool("isMoving", isMoving);
         anim.SetBool("isChasing", currentState == BossState.Chasing);
 
-        // --- Footsteps ---
+        // Footsteps
         if (isMoving)
         {
             footstepTimer += Time.deltaTime;
@@ -267,9 +274,10 @@ public class BossBehaviour : MonoBehaviour
 
         Vector2 origin = attackPoint != null ? (Vector2)attackPoint.position : (Vector2)transform.position;
         float dist = Vector2.Distance(origin, player.position);
-        if (dist <= attackHitRange)
+        if (dist <= attackHitRange) {
             playerBehaviour.TakeDamage(attackDamage);
-            Debug.Log($"Boss attacked player. Player HP: {playerBehaviour.CurrentHealth}/{playerBehaviour.maxHealth}");
+            Debug.Log($"Enemy attacked player. Player HP: {playerBehaviour.CurrentHealth}/{playerBehaviour.maxHealth}");
+        }
     }
 
     // ---------------------------------------------------------------
@@ -281,16 +289,18 @@ public class BossBehaviour : MonoBehaviour
         if (currentState == BossState.Dead) return;
 
         currentHealth -= damage;
-        Debug.Log($"Boss took {damage} damage. HP: {currentHealth}/{maxHealth}");
+        Debug.Log($"Enemy took {damage} damage. HP: {currentHealth}/{maxHealth}");
 
         anim.ResetTrigger("Hurt");
         anim.SetTrigger("Hurt");
         // Getting hit snaps the boss into chasing state
-        if (currentState != BossState.Attacking)
+        if (currentState != BossState.Attacking) {
             EnterChasing();
+        }
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0) {
             Die();
+        }
     }
 
     void Die()

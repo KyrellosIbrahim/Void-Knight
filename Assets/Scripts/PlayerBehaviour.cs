@@ -55,6 +55,7 @@ public class PlayerBehaviour : MonoBehaviour
     private bool jumpQueued = false;
     private bool isDead = false;
     private bool isSprinting = false;
+    private float fallOffMapYLevel = -30f;
 
     void Start()
     {
@@ -65,7 +66,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (isDead) return;
         // instant death if player falls off the map
-        if (transform.position.y <= -30f)
+        if (transform.position.y <= fallOffMapYLevel)
         {
             currentHealth = 0;
             Die();
@@ -153,8 +154,6 @@ public class PlayerBehaviour : MonoBehaviour
             anim.SetTrigger("Attack");
             audioSource.PlayOneShot(swordSlash);
             attackCooldownTimer = attackCooldown;
-            // Damage is applied mid-animation via PerformAttack() called from an Animation Event,
-            // OR immediately here if you don't have animation events set up yet.
             PerformAttack();
         }
     }
@@ -174,14 +173,7 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    // ---------------------------------------------------------------
     //  Attack
-    // ---------------------------------------------------------------
-
-    /// <summary>
-    /// Called directly on key press, OR can be called from an Animation Event
-    /// at the frame the weapon connects for perfect timing.
-    /// </summary>
     public void PerformAttack()
     {
        float facing = spriteRenderer.flipX ? -1f : 1f;
@@ -201,22 +193,19 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    // ---------------------------------------------------------------
     //  Health / Damage
-    // ---------------------------------------------------------------
-
     public void AddCoin()
     {
         coinCount++;
 
-        if (coinCount % coinsPerMaxHealth == 0)
+        if (coinCount % coinsPerMaxHealth == 0) // if player has collected multiple of numCoins for health increase
         {
             maxHealth++;
             currentHealth++;
             Debug.Log($"Max health up! Now {maxHealth}.");
         }
 
-        if (coinCount % coinsPerDamageBoost == 0)
+        if (coinCount % coinsPerDamageBoost == 0) // if player has collected multiple of numCoins for damage boost
         {
             attackDamage++;
             Debug.Log($"Damage up! Now {attackDamage}.");
@@ -264,10 +253,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (menu != null) menu.ShowGameOver();
     }
 
-    // ---------------------------------------------------------------
     //  Helpers
-    // ---------------------------------------------------------------
-
     void PlayRandomFootstep()
     {
         if (footstepSounds.Length == 0) return;
